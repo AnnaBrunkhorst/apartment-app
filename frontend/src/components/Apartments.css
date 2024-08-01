@@ -1,0 +1,80 @@
+body {
+    background-color: #97d7ff;
+  }
+
+.padded-container, .apartment-container {
+    padding: 10px;
+}
+
+.padded-container {
+    margin-bottom: 10px;
+}
+
+.apartment-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.apartment-details {
+    flex-grow: 1;
+}
+
+.apartment-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.buttonBlu {
+    padding: 6px 12px;
+    color: white;
+    background-color: #007BFF;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+}
+  
+.buttonBlu:hover {
+    background-color: #0056b3;
+}
+
+.buttonRed {
+    padding: 6px 12px;
+    color: white;
+    background-color: #ff0000;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+}
+  
+.buttonRed:hover {
+    background-color: #900000;
+}
+  
+input[type="text"] {
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #007bff;
+    border-radius: 4px;
+}
+  
+input[type="text"]:focus {
+    outline: none;
+    border-color: #0056b3;
+}

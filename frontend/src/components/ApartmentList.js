@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import SearchBar from './SearchBar';
+import './Apartments.css';
 
 function ApartmentList() {
   const [apartments, setApartments] = useState([]);
@@ -23,17 +24,23 @@ function ApartmentList() {
 
   return (
     <div>
-      <h1>Apartment List</h1>
-      <SearchBar onSearch={(value) => setSearchTerm(value)} />
+      <div className="padded-container">
+        <h1>Available Apartments</h1>
+        <SearchBar onSearch={(value) => setSearchTerm(value)} />
+        <Link to="/create" className="buttonBlu">Add New Apartment</Link>
+      </div>
       {apartments.filter(apartment => apartment.name.toLowerCase().includes(searchTerm.toLowerCase())).map(apartment => (
-        <div key={apartment.id}>
-          <h2>{apartment.name}</h2>
-          <p>{apartment.description}</p>
-          <Link to={`/edit/${apartment.id}`}>Edit</Link>
-          <button onClick={() => handleDelete(apartment.id)}>Delete</button>
-        </div>
+        <div className="apartment-container">
+          <div className="apartment-details">
+              <h3>{apartment.name}</h3>
+              <p>{apartment.description}</p>
+          </div>
+          <div className="apartment-actions">
+              <Link to={`/edit/${apartment.id}`} className="buttonBlu">Edit</Link>
+              <button onClick={() => handleDelete(apartment.id)} className="buttonRed">Delete</button>
+          </div>
+      </div>
       ))}
-      <Link to="/create">Add New Apartment</Link>
     </div>
   );
 }
