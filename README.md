@@ -1,3 +1,7 @@
+## Video Demo
+
+My video walkthrough for apartment-app was too large to upload here directly, but you can view it at https://youtu.be/CIXvfQO3J70.
+
 ## Application
 
 This is a simple application allowing visitors to view, create, edit, and delete apartment listings. Users can also search for apartments by name.
