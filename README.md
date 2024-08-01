@@ -6,7 +6,7 @@ My video walkthrough for apartment-app was too large to upload here directly, bu
 
 This is a simple application allowing visitors to view, create, edit, and delete apartment listings. Users can also search for apartments by name.
 
-The application itself was built in approximately two hours. I then created this README and am now working on creating a demo video to accompany the application.
+The application itself was built in approximately two hours. I then created this README and the above demo video to accompany the application.
 
 ## Technologies Used
 
